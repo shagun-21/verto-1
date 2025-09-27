@@ -11,6 +11,7 @@ app.get("/api/products", (req, res) => {
   res.json(products);
 });
 
+app.get("/health", (req, res) => res.send("API is alive 🚀"));
 // POST /api/checkout
 app.post("/api/checkout", (req, res) => {
   const { items } = req.body;
